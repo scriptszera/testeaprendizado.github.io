@@ -1,0 +1,236 @@
+@charset "UTF-8";
+        @font-face {
+            font-family: Android;
+            src: url(pacote-projeto-d010/fontes/idroid.otf);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+        :root
+        {
+            --cor0:#c5ebd6; 
+            --cor1:#83E1AD;
+            --cor2:#3DDC84;
+            --cor3:#2FA866;
+            --cor4:rgb(26, 92, 55);
+            --cor5:#063d1e;
+            --fonte0: Arial, Helvetica, sans-serif;
+            --fonte1: 'Open Sans', Sans;
+            --fonte2: 'Android', sans-serif;
+        }
+
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body
+        {
+            min-width: 560px;
+        }
+        footer
+        {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+        }
+        header>h1
+        {
+            font-family: var(--fonte1);
+            color: white;
+            font-weight: normal;
+            font-size: 4em; 
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 20px; 
+            margin-top: 15px;
+        }
+        header>p
+        {
+            color: white;
+            font-family: var(--fonte0);
+            font-weight: normal;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 15px ;
+            padding-top: 25px;
+        }
+        header
+        {
+            background:linear-gradient(to bottom, var(--cor2), var(--cor5)100%);
+            padding: 10px;
+            /*box-shadow: 0px 0px 5px 2px #000000;
+            z-index: 1;
+            position: relative;*/
+            text-align: center;
+        }
+        nav
+        {
+            background-color: var(--cor5);
+            box-shadow: 0px 1px 5px 2px var(--cor5);
+            padding: 10px;
+            text-align: justify;
+            position: relative;
+        }
+        nav>a
+        {
+            text-decoration: none;
+            font-family: var(--fonte0);
+            font-weight: bold;
+            color: white;
+            margin: 0px 0px 0px 0px;
+            padding: 10px 15px 10px 15px;
+            
+        }
+        nav>a:hover
+        {
+            background-color: rgb(11, 37, 22);
+            border-radius: 10px;
+            transition-duration: 0.5s;
+            padding: 10px 15px 10px 15px;
+            font-size: 1.21em;
+        }
+        main
+        {
+            background-color: var(--cor1);
+            padding: 1px;
+        }
+        .imagens
+        {
+        display: flex;
+        margin: 17px auto 17px auto;
+        }
+        main>section
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        main>section>article
+        {
+            background-color: white;
+            max-width: 850px;
+            margin: 0px auto 20px auto;
+            border-radius: 0px 0px 25px 25px;
+            box-shadow: 0px 0px 5px 0px#313131b4;
+            padding-top: 5px;
+        }
+        main>section>article>p
+        {
+            text-indent: 20px;
+            font-family: var(--fonte0);
+            text-align: justify;
+            font-weight: bold;
+            line-height: 1.5em;
+            font-size: 1em;
+            margin: 0px 0px 0px 0px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        main>section>article>h2
+        {
+            background: linear-gradient(to right, var(--cor0), white 100%);
+            margin: 30px 0px 30px 30px;
+        }
+        main>section>article>h1
+        {
+            margin: 15px 25px 20px 25px;
+            padding-left: 15px;
+            background: linear-gradient(to right, var(--cor1), white);
+        }
+        h1,h2
+        {
+            font-family: var(--fonte2);
+            color: var(--cor4);
+        }
+        h2
+        {
+            text-indent: 15px;
+        }
+        #iframe
+        {
+            position:absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+        .video
+        {
+            position: relative;
+            background-color: var(--cor5);
+            margin: 40px 0px 40px 0px;
+            padding: 20px 20px;
+            padding-bottom: 54%;
+        }
+        aside
+        {
+            background-color: #c5ebd6;
+            font-family: var(--fonte0);
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            margin-top: 0px;
+            border-radius: 25px 25px 25px 25px;
+            max-width: 700px;
+            min-height: 375px;
+            max-height: 1200px;
+            box-shadow: 0px 0px 0px#000000;
+        }
+        aside>p
+        {
+            text-indent: 15px;
+            margin-left: 15px;
+            margin-right: 10px;
+            padding-bottom: 20px;
+        }
+        h3
+        {
+            font-family: var(--fonte1);
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            background-color: var(--cor3);
+            border-radius: 25px 25px 0px 0px;
+            text-indent: 20px;
+            max-width: 700px;
+            min-width: 100px;
+            max-height: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        footer>p
+        {
+            padding: 15px;
+        }
+        footer>p>ul>li
+        {
+            margin-left: 15px;
+        }
+        ul
+        {
+            list-style-type: '\2714\0020\0020';
+            columns: 2;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+        strong
+        {
+            color: var(--cor4);
+        }
+        a
+        {
+            color: var(--cor4);
+            text-decoration: none;
+        }
+        main a::before
+        {
+            content: '🔗';
+        }
+        #dansdroid
+        {
+            min-width: 10%;
+            max-width: 100%;
+        }
